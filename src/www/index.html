@@ -227,6 +227,10 @@
                       :title="'Last seen on ' + dateTime(new Date(client.latestHandshakeAt))">
                       · {{new Date(client.latestHandshakeAt) | timeago}}
                     </span>
+
+                    <span>
+                      · {{'Total Download: ' + bytes(client.transferTx)}}
+                    </span>
                   </div>
                 </div>
 
